@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Header />
-        {children}
+        <main className="px-16 py-8">{children}</main>
       </body>
     </html>
   );
