@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 function Success() {
   return (
-    <div className="flex flex-col space-y-2 items-start w-1/2 m-auto">
+    <div className="flex flex-col space-y-2 items-start lg:w-1/2 m-auto">
       <Link href="/">
         <Button
           variant="ghost"

@@ -1,5 +1,6 @@
 'use client';
 
+import { jetbrains_mono } from '@/app/fonts';
 import { RedirectToCheckoutOptions } from '@stripe/stripe-js';
 import getStripe from '../../../utils/get-stripe';
 import { Button } from './button';
@@ -40,7 +41,11 @@ function ProductCard(props: ProductCardProps) {
         <div className="max-w-md h-full flex flex-col justify-between space-y-8 px-10 py-8 border rounded-xl bg-slate-800 border-slate-800 hover:border-indigo-600 ">
           <div className="flex flex-col items-start space-y-4">
             <div>
-              <h5 className="text-lg font-semibold">{name}</h5>
+              <h5
+                className={`${jetbrains_mono.className} text-lg font-semibold`}
+              >
+                {name}
+              </h5>
               <p className="text-slate-300">{durationInHours} hours</p>
             </div>
             <div className="z-[1]">
@@ -52,7 +57,7 @@ function ProductCard(props: ProductCardProps) {
             <p>{description}</p>
           </div>
           <Button
-            className="text-lg px-6 py-6 rounded-md bg-indigo-500 text-slate-100 hover:bg-indigo-600 hover:text-inherit"
+            className={`${jetbrains_mono.className} text-lg px-6 py-6 rounded-md bg-indigo-500 text-slate-100 hover:bg-indigo-600 hover:text-inherit`}
             onClick={handleClick}
           >
             Purchase
