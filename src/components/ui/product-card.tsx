@@ -37,7 +37,7 @@ function ProductCard(props: ProductCardProps) {
 
   return (
     <>
-      <div className="hover:bg-gradient-to-br hover:from-indigo-500 hover:to-fuchsia-500 p-0.5 hover:scale-105 transition ease-in-out duration-250 rounded-xl">
+      <div className="hover:bg-gradient-to-br hover:from-indigo-500 hover:to-fuchsia-500 p-0.5 hover:scale-105 hover:animate-animate-gradient bg-[length:300%_300%] transition ease-in-out duration-250 rounded-xl">
         <div className="max-w-md h-full flex flex-col justify-between space-y-8 px-10 py-8 border rounded-xl bg-slate-800 border-slate-800 hover:border-indigo-600 ">
           <div className="flex flex-col items-start space-y-4">
             <div>
