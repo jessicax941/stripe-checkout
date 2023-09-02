@@ -32,7 +32,7 @@ export default function Home() {
       <h1 className="text-2xl font-bold text-center">
         Level up your web development skills
       </h1>
-      <div className="mt-8 flex flex-col lg:flex-row lg:justify-between w-fit lg:space-x-10 space-y-8 m-auto">
+      <div className="mx-auto max-w-screen-xl my-8 flex flex-col items-center space-y-6 lg:flex-row lg:items-stretch lg:space-x-8 lg:space-y-0">
         {products.map((product, index) => (
           <ProductCard key={index} {...product} />
         ))}
