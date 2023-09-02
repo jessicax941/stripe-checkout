@@ -33,8 +33,8 @@ export default function Home() {
         Level up your web development skills
       </h1>
       <div className="mt-8 flex flex-row justify-between w-fit space-x-10 m-auto">
-        {products.map((product) => (
-          <ProductCard {...product} />
+        {products.map((product, index) => (
+          <ProductCard key={index} {...product} />
         ))}
       </div>
     </div>
